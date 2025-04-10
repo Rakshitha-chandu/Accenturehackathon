@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Match AI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI-Powered Job Matcher</h1>
+        <form id="uploadForm">
+            <label>Upload Resume (PDF):</label>
+            <input type="file" name="resume" required><br>
+
+            <label>Paste Job Description:</label>
+            <textarea name="job_description" rows="6" required></textarea><br>
+
+            <button type="submit">Match Resume</button>
+        </form>
+
+        <div id="result" class="hidden">
+            <h2>Matching Score: <span id="score"></span>%</h2>
+            <h3>Parsed Resume:</h3>
+            <pre id="parsed"></pre>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
